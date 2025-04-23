@@ -1,0 +1,50 @@
+Comandos para configurar el modulo esp8266:
+
+
+SSID:Nombre_red*
+Ejemplo: si la red tiene el nombre de Telefonica el comando debe ser:
+	SSID:Telefonica*
+Donde *marca el final del nombre
+
+PASS:Password_red*
+Ejemplo: si la red wifi tiene como password Golperu123 el comando debe ser:
+	PASS:Golperu123*
+Donde *marca el final de la contraseña
+
+URL:URL_Servidor*
+Ejemplo: aquí se configura el IP de destino para el protocolo:
+	PASS:ec2-54-174-32-205.compute-1.amazonaws.com*
+
+Donde *marca el final de la contraseña
+
+PORT:Puerto_del_servidor*
+Ejemplo: aquí se configura el puerto de comunicación del servidor
+	PASS:5050*
+
+RESET
+comando para reiniciar modulo wifi
+
+SSID?
+comando para consultar SSID configurado
+
+PASS?
+comando para consultar por la contraseña
+
+PORT?
+comando para consultar por el puerto
+
+PING
+Comando para realizar un ping con el servidor
+
+WIFI_CONNECT
+comando para conectar a la red WIFI con el SSID y el PASSWORD establecidos
+
+WIFI_STATUS
+Comando para verificar si se logro conexión en la red wifi
+
+SCANNER
+Comando para obtener nombres de redes wifi disponibles
+
+SEND:Mensaje_a_servidor*
+Ejemplo: Se quiere enviar la palabra HOLA al servidor entonces: 
+	SEND:HOLA*
