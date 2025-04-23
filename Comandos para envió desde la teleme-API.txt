@@ -1,0 +1,74 @@
+Comandos para envió desde la telemetría van en "C". 
+EQUIPO 1
+IMEI,1B30,123321>setpoint1,setpoint2,powerState,ControlingMode,usda1,..
+EQUIPO 2
+IMEI,1B30,234432>setpoint1,setpoint2,powerState,ControlingMode,usda1,..
+EQUIPO 3
+IMEI,1B30,345543>setpoint1,setpoint2,powerState,ControlingMode,usda1,..
+EQUIPO 4
+IMEI,1B30,456654>setpoint1,setpoint2,powerState,ControlingMode,usda1,..
+EQUIPO 5
+IMEI,1B30,567765>setpoint1,setpoint2,powerState,ControlingMode,usda1,..
+
+COMANDOS DE RECEPCION:
+EQUIPO 1:
+1B40,123321,COMANDO
+EQUIPO 1:
+1B40,234432,COMANDO
+EQUIPO 1:
+1B40,345543,COMANDO
+EQUIPO 1:
+1B40,456654,COMANDO
+EQUIPO 1:
+1B40,567765,COMANDO
+
+/*ESTRUCTURA DE ALGUNOS COMANDOS*/
+CAMBIAR SETPOINT DE PRODUCTO EQUIPO 1: 
+1B40,123321,SETPOINT(-2.4)
+ENCENDER EQUIPO 2
+1B40,234432,POWERON
+APAGAR TODOS LOS EQUIPOS
+1B40,ALL,POWEROFF
+
+
+/*DATOS DE CONTROL*/
+setpoint1 (producto) 	(FLOAT)
+setpoint2 (máquina)  	(FLOAT)
+Power State 	     	(int)
+Controling Mode      	(int)
+
+/*DATOS DE SENSORES*/
+usda1 			(FLOAT)
+usda2			(FLOAT)
+usda3			(FLOAT)
+usda4			(FLOAT)
+suministro		(FLOAT)
+retorno			(FLOAT)	
+evaporador		(FLOAT)
+consumo eléctrico	(FLOAT)
+frecuencia		(FLOAT)
+voltaje			(FLOAT)
+Ambiente		(FLOAT)
+Compresor		(FLOAT)
+Corriente F1		(FLOAT)
+Corriente F2		(FLOAT)
+Corriente F3		(FLOAT)
+
+/*IO*/
+Heater			(INT)
+Compresor 		(INT)
+EvaporatorH		(INT)
+EvaporatorL		(INT)
+Condenser 		(INT)
+
+/*ALARMAS*/
+alarma 1		(INT)
+alarma 2		(INT)
+alarma 3		(INT)
+alarma 4		(INT)
+alarma 5		(INT)
+alarma 6		(INT)
+alarma 7		(INT)
+alarma 8		(INT)
+alarma 9		(INT)
+alarma 10		(INT)
